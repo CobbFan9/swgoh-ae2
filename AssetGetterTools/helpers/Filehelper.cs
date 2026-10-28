@@ -16,11 +16,6 @@ namespace AssetGetterTools
         public static List<AssetItem> exportableAssets = new List<AssetItem>();
         public static List<AssetItem> exportableSprites = new List<AssetItem>();
 
-        public Filehelper()
-        {
-            verifytextureDLLisReady();
-        }
-
         public void UnpackBundle(string inFile, string targetFolder, string assetName, bool exportShader = false, bool exportMeshes = false, bool exportAnimator = false, bool exportMonoBehavior = false, bool exportSpriteAtlases = false)
         {
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
@@ -133,20 +128,6 @@ namespace AssetGetterTools
                 var result = Exporter.ExportConvertFile(exportableSprite, $"{targetFolder}", true);
             }
 
-        }
-
-        public void verifytextureDLLisReady()
-        {
-            var dllDir = GetDirectedDllDirectory();
-
-            var fulFileName = $"{dllDir}/Texture2DDecoderNative.dll";
-
-            Console.WriteLine($"Checking for file {fulFileName}");
-
-            if (!File.Exists(fulFileName))
-            {
-                throw new Exception($"The File Texture2DDecoderNative.dll could not be found. Make sure it exists in the folder '{dllDir}'");
-            }
         }
 
         private static string GetDirectedDllDirectory()
