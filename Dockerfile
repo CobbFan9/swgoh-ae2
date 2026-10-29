@@ -32,6 +32,5 @@ RUN apt update && apt install -y \
 
 COPY --from=build /app/publish .
 COPY --from=build /app/publish/x64 /usr/share/dotnet/x64
-COPY --from=build /app/publish/x86 /usr/share/dotnet/x86
 
 ENTRYPOINT ["dotnet", "AssetWebApi.dll"]
