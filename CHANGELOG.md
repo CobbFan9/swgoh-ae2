@@ -1,3 +1,38 @@
+# 1.0.0 (2026-10-29)
+
+
+### Bug Fixes
+
+* add --platform as in https://github.com/dotnet/sdk/issues/29892 ([3c8a582](https://github.com/cobbfan9/swgoh-ae2/commit/3c8a582f21702dce09affa5053a0930e44a72456))
+* add AssetOS to Console ([fa93d09](https://github.com/cobbfan9/swgoh-ae2/commit/fa93d098cd858b15272e7fe3874ed61cd2c87b53))
+* add clear Description to enums. ([b1346fa](https://github.com/cobbfan9/swgoh-ae2/commit/b1346fad2cec5083d5a0d2359795ceff77df4a89))
+* Clear Filehelper.exportableSprites before unpacking bundles ([7aa02fa](https://github.com/cobbfan9/swgoh-ae2/commit/7aa02fa1254bbd71d60cce0a5a19d515fc1dfb13))
+* Disable ReadyToRun for GUI ([07ecb10](https://github.com/cobbfan9/swgoh-ae2/commit/07ecb103051a24b04cb3d0a687447ef7759a2697))
+* do not use EnumSchemaFilter ([a386177](https://github.com/cobbfan9/swgoh-ae2/commit/a386177cdc4242dabe7be3faf1e755ad6e3b0995))
+* Dockerimage build with .Net 8 (non slim) ([0221910](https://github.com/cobbfan9/swgoh-ae2/commit/0221910a04ba11dbee857ccd829fb0d7c46d8526))
+* Exporting of Meshes dont work under specific Cultures ([e470443](https://github.com/cobbfan9/swgoh-ae2/commit/e4704432ce27b833270213facfcc0e80aa906642))
+* ignore the GUI on build ([7b20794](https://github.com/cobbfan9/swgoh-ae2/commit/7b20794bd6a1c3511eca6b14e1a7694eae4c96b2))
+* incorrect upstream in package.json ([52e96b4](https://github.com/cobbfan9/swgoh-ae2/commit/52e96b4727659f6078098ac4d34aefcde471065c))
+* repo name could be uppercase ([fa43b42](https://github.com/cobbfan9/swgoh-ae2/commit/fa43b42ab378e0cd04f2e5a586b875d2fe2e061a))
+* some nullchecks and not auto true for sprites ([29fd7ca](https://github.com/cobbfan9/swgoh-ae2/commit/29fd7ca95a9ea6e3fc8d0e73e67632e39d7dec44))
+* Update Dockerfile ([ebd5d67](https://github.com/cobbfan9/swgoh-ae2/commit/ebd5d67745af36e47472a377f3d3b50d75bb573a))
+* use .Net 8 for better compatibility ([47bc267](https://github.com/cobbfan9/swgoh-ae2/commit/47bc2670b4dbb6b9fe7ad427c30a410c02bd855c))
+* use .Net 8 for Docker ([5fde58c](https://github.com/cobbfan9/swgoh-ae2/commit/5fde58c755c3466e29a242dfbf5f2b482a921985))
+
+
+### Features
+
+* Add github action to build the project ([452c560](https://github.com/cobbfan9/swgoh-ae2/commit/452c56077ba084b194bc297e64af16d12c73c8f1))
+* add Linux ARM64 support ([30b1250](https://github.com/cobbfan9/swgoh-ae2/commit/30b12509c95e483f87b245a7f915d253a0443a0a))
+* Add sprite exporting to GUI and CLI ([fe9d99d](https://github.com/cobbfan9/swgoh-ae2/commit/fe9d99d5855704203502e2329764062d910d1c6b))
+* added GUI (Windows only) ([d8c4d1f](https://github.com/cobbfan9/swgoh-ae2/commit/d8c4d1ffe58e85ec4a64bb6c001da426058c0ae8))
+* Allow diffing versions ([311e084](https://github.com/cobbfan9/swgoh-ae2/commit/311e084f7f11e90e000f8f2be3c6bb229fd8ec12))
+* Allow Windows and set it to default ([7204712](https://github.com/cobbfan9/swgoh-ae2/commit/720471238434a907128229011b7545746f939099))
+* Compatible with Unity 2022.3 ([d7c9dc9](https://github.com/cobbfan9/swgoh-ae2/commit/d7c9dc978b33598e0296105b8b2f112fd0af128b))
+* Complete Audio to MP3 download for Windows ([510f744](https://github.com/cobbfan9/swgoh-ae2/commit/510f744586c20e2a729e96c14238351f6f01478b))
+* migrate swgoh-ae2 to github ([529d8e9](https://github.com/cobbfan9/swgoh-ae2/commit/529d8e95fe71163ba5f10a24dd170d2a47ef3a45))
+* use github for assetversion ([c2aa712](https://github.com/cobbfan9/swgoh-ae2/commit/c2aa71263006486285d7312097181db07a1a6cdf))
+
 # [1.7.0](https://github.com/swgoh-utils/swgoh-ae2/compare/v1.6.0...v1.7.0) (2025-12-03)
 
 
