@@ -1,4 +1,4 @@
-# SWGoH Asset Extractor 
+# SWGoH Asset Extractor  
 This Program can download and extract SWGoH 2D Textures.
 
 ## Docker
