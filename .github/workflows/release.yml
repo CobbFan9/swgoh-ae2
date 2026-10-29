@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - unity-6-support
 
 env:
   REGISTRY: ghcr.io
