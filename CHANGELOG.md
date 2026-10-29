@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.0...v1.0.1) (2026-10-29)
+
+
+### Bug Fixes
+
+* trigger release ([55ea7e2](https://github.com/cobbfan9/swgoh-ae2/commit/55ea7e24f88cf4247ae6c002cb22648e02d27304))
+
 # 1.0.0 (2026-10-29)
 
 
