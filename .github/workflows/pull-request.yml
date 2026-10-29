@@ -2,7 +2,9 @@ name: Pull request workflow
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: 
+      - main
+      - unity-6-support
 
 env:
   REGISTRY: ghcr.io

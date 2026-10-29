@@ -1,5 +1,5 @@
 module.exports = {
-  branches: ['main'],
+  branches: ['main', 'unity-6-support'],
   debug: 'semantic-release:*',
   plugins: [
     [
