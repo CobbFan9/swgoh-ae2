@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.2...v1.0.3) (2026-10-29)
+
+
+### Bug Fixes
+
+* ARM64 Docker built for wrong platform ([22d9a2a](https://github.com/cobbfan9/swgoh-ae2/commit/22d9a2a6b1513fc29e2de0c1a9ff946bc6d63200))
+
 ## [1.0.2](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.1...v1.0.2) (2026-10-29)
 
 
