@@ -4,14 +4,14 @@
   "description": "A service to download and extract SWGoH 2D Textures",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/swgoh-utils/swgoh-ae2.git"
+    "url": "git+https://github.com/cobbfan9/swgoh-ae2.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/swgoh-utils/swgoh-ae2/issues"
+    "url": "https://github.com/cobbfan9/swgoh-ae2/issues"
   },
-  "homepage": "https://github.com/swgoh-utils/swgoh-ae2#readme",
+  "homepage": "https://github.com/cobbfan9/swgoh-ae2#readme",
   "private": true,
   "devDependencies": {
     "@semantic-release/changelog": "^7.0.0",
