@@ -52,7 +52,8 @@ namespace AssetStudioGUI
             {
                 if (!TryExportFile(exportPath, item, ".wav", out var exportFullPath))
                     return false;
-                var buffer = converter.ConvertToWav(m_AudioData, out var debugLog);
+                string debugLog = string.Empty;
+                var buffer = converter.ConvertToWav(m_AudioData, ref debugLog);
                 if (buffer == null)
                     return false;
                 File.WriteAllBytes(exportFullPath, buffer);
@@ -175,7 +176,7 @@ namespace AssetStudioGUI
 
             #region Face
             int sum = 0;
-            for (var i = 0; i < m_Mesh.m_SubMeshes.Length; i++)
+            for (var i = 0; i < m_Mesh.m_SubMeshes.Count; i++)
             {
                 sb.AppendLine($"g {m_Mesh.m_Name}_{i}");
                 int indexCount = (int)m_Mesh.m_SubMeshes[i].indexCount;
