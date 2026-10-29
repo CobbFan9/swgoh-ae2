@@ -89,6 +89,7 @@ function Compile {
             ExtraArgs = @(
                 "/p:Configuration=Release"
                 "/p:SelfContained=false"
+                "/p:PublishReadyToRun=false"
                 "/verbosity:minimal"
             )
         }
