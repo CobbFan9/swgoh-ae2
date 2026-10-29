@@ -85,7 +85,7 @@ function Compile {
         @{
             Solution  = "swgoh-ae-gui.sln"
             Target    = "AssetGUI:publish"
-            Name      = "AssetGUI"
+            Name      = "AssetGUI-Windows"
             ExtraArgs = @(
                 "/p:Configuration=Release"
                 "/p:SelfContained=false"
