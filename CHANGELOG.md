@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.1...v1.0.2) (2026-10-29)
+
+
+### Bug Fixes
+
+* CI failed to get PR info, and wasn't uploading release assets ([08c6271](https://github.com/cobbfan9/swgoh-ae2/commit/08c62712e7cdfab9732eb6518be7dc6caa689b70))
+* PR workflow doesn't lowercase docker image name ([3c7b02e](https://github.com/cobbfan9/swgoh-ae2/commit/3c7b02e98b7402af328d7fac8685c078ca2c758c))
+
 ## [1.0.1](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.0...v1.0.1) (2026-10-29)
 
 
