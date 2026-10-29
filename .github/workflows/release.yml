@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - unity-6-support
 
 env:
   REGISTRY: ghcr.io
@@ -14,6 +15,7 @@ jobs:
       contents: write
       issues: write
       packages: write
+    needs: build-binaries
     name: Release
     runs-on: ubuntu-latest
     steps:
@@ -40,8 +42,36 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download Windows release files
+        uses: actions/download-artifact@v4
+        with:
+          name: release-files
+          path: release-files
+
       - run: npm ci
       - run: npx semantic-release
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CI_REGISTRY_IMAGE: ${{ env.REGISTRY }}/${{ github.repository }}
+  
+  build-binaries:
+    name: Build binaries
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - uses: microsoft/setup-msbuild@v3
+
+      - name: Build all binaries
+        shell: pwsh
+        run: ./buildReleaseAssets
+      
+      - name: Upload release files
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-files
+          path: publish/zippedFiles/
+          if-no-files-found: error
