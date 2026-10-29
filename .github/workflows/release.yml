@@ -15,6 +15,7 @@ jobs:
       contents: write
       issues: write
       packages: write
+    needs: build-binaries
     name: Release
     runs-on: ubuntu-latest
     steps:
@@ -55,14 +56,13 @@ jobs:
           CI_REGISTRY_IMAGE: ${{ env.REGISTRY }}/${{ github.repository }}
   
   build-binaries:
-    permissions:
-      contents: write
-      issues: write
-      packages: write
     name: Build binaries
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
+
       - uses: microsoft/setup-msbuild@v3
 
       - name: Build all binaries

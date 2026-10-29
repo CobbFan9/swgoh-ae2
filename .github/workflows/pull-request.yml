@@ -43,3 +43,24 @@ jobs:
           push: true
           tags: |
             ${{ env.CI_REGISTRY_IMAGE }}:pr-${{ github.head_ref }}
+  
+  build-binaries:
+    name: Build binaries
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - uses: microsoft/setup-msbuild@v3
+
+      - name: Build all binaries
+        shell: pwsh
+        run: ./buildReleaseAssets
+      
+      - name: Upload release files
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-files-pr-${{ github.event.pull_request.number }}
+          path: publish/zippedFiles/
+          if-no-files-found: error
