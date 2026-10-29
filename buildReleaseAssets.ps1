@@ -1,18 +1,18 @@
 function CheckDotnet {
-    Write-Output "Checking for .NET SDK 8 or newer..."
+    Write-Output "Checking for .NET SDK 9 or newer..."
 
     try {
         $sdks = dotnet --list-sdks 2>$null
 
-        $net8Plus = $sdks | Where-Object {
-            $_ -match '^(\d+)\.' -and [int]$Matches[1] -ge 8
+        $net9Plus = $sdks | Where-Object {
+            $_ -match '^(\d+)\.' -and [int]$Matches[1] -ge 9
         }
 
-        if ($net8Plus) {
-            Write-Output ".NET 8 or newer found."
+        if ($net9Plus) {
+            Write-Output ".NET 9 or newer found."
         }
         else {
-            Write-Error ".NET 8 or newer not found."
+            Write-Error ".NET 9 or newer not found."
             exit 1
         }
     }
