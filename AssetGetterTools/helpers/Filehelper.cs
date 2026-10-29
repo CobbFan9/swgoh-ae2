@@ -30,7 +30,7 @@ namespace AssetGetterTools
 
             assetManager.LoadFilesAndFolders(pathes.ToArray());
 
-            foreach (var assetsFile in assetManager.assetsFileList)
+            foreach (var assetsFile in assetManager.AssetsFileList)
             {
                 foreach (var asset in assetsFile.Objects)
                 {
