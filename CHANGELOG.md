@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.3...v1.0.4) (2026-10-29)
+
+
+### Bug Fixes
+
+* AssetGUI wasn't labeled Windows only in release assets ([9454337](https://github.com/cobbfan9/swgoh-ae2/commit/9454337a4bf798ee196a8c6c6f5a6cc34fd70e91))
+
 ## [1.0.3](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.2...v1.0.3) (2026-10-29)
 
 
