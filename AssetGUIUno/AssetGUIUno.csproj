@@ -1,0 +1,44 @@
+﻿<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net10.0-desktop</TargetFrameworks>
+    <NoWarn>$(NoWarn);NU1507;NETSDK1201;PRI257</NoWarn> <!-- Uno project says to ignore these -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+
+    <!-- Display name -->
+    <ApplicationTitle>AssetGUIUno</ApplicationTitle>
+    <!-- App Identifier -->
+    <ApplicationId>com.swgoh-utils.assetguiuno</ApplicationId>
+    <!-- Versions -->
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <!-- Package Publisher -->
+    <ApplicationPublisher>AssetGUIUno</ApplicationPublisher>
+    <!-- Package Description -->
+    <Description>AssetGUIUno powered by Uno Platform.</Description>
+
+    <!--
+      UnoFeatures are used to quickly add and manage features enabled for your app.
+      https://aka.platform.uno/singleproject-features
+    -->
+    <UnoFeatures>
+		SimpleTheme;
+		Toolkit;
+		Mvvm;
+		ThemeService;
+		SkiaRenderer;
+	</UnoFeatures>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssetGetterTools\AssetGetterTools.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

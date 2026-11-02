@@ -27,6 +27,7 @@ using System.Runtime.InteropServices;
 using AssetGetterTools.models;
 using Newtonsoft.Json;
 using AssetGUI.Models;
+using AssetStudio;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -56,6 +57,7 @@ namespace AssetGUI
             //Microsoft.UI.Xaml.Controls.TextBlock
             this.InitializeComponent();
             AllocConsole();
+            Logger.Default = new ConsoleLogger();
             //Console.SetOut();
 
             this.mainProgram = new MainProgram();
@@ -265,6 +267,14 @@ namespace AssetGUI
         private void cbSpriteAtlases_Checked(object sender, RoutedEventArgs e)
         {
             this.mainProgram.exportSpriteAtlases = this.cbSpriteAtlases.IsChecked.Value;
+        }
+    }
+
+    public class ConsoleLogger : ILogger
+    {
+        public void Log(LoggerEvent loggerEvent, string message, bool ignoreLevel)
+        {
+            Console.WriteLine($"[{DateTime.Now:HH:mm:ss} [{loggerEvent}] {message}");
         }
     }
 }
