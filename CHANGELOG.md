@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.5...v1.0.6) (2026-11-02)
+
+
+### Bug Fixes
+
+* Semantic release didn't run ([9fbebd6](https://github.com/cobbfan9/swgoh-ae2/commit/9fbebd6a1b4b624ed5dd24e285436fdc0fb2be60))
+
 ## [1.0.5](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.4...v1.0.5) (2026-11-02)
 
 
