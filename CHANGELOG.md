@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.4...v1.0.5) (2026-11-02)
+
+
+### Bug Fixes
+
+* Apparently [secure] doesn't release on chore ([2992d0e](https://github.com/cobbfan9/swgoh-ae2/commit/2992d0ec49a78790fb305ee5687f5351d6c2425b))
+
 ## [1.0.4](https://github.com/cobbfan9/swgoh-ae2/compare/v1.0.3...v1.0.4) (2026-10-29)
 
 
